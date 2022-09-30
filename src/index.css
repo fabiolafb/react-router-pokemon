@@ -1,8 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Inter Tight', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +8,79 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+/* Navbar */
+.contenedor_nav {
+  width: 100%; 
+  background-color: rgb(169, 164, 164);
+  height: 4rem;  
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  justify-content: space-between;
+}
+.div_links {
+  display: flex;
+}
+.logo_navbar {
+  width: 2.5rem;
+  margin-left: 7rem;
+}
+.div_poke {
+  margin-right: 7rem;
+  text-decoration: none;
+}
+.div_home {
+  margin-right: 2rem;
+  text-decoration: none;
+}
+.active {
+  color: red;
+  text-decoration: none;
+}
+.inactive {
+  color: white;
+  text-decoration: none;
+}
+
+/* Home */
+.home_div {
+  margin-top: 3rem;
+  text-align: center;
+}
+.pokeimagen {
+  width: 28rem;
+}
+
+/* Pokemones */
+.pokemones_div  {
+  margin-top: 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.selector {
+  width: 13rem;
+  height: 2rem;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+}
+ button {
+  margin-top: 2rem;
+  width: 10rem;
+  height: 2rem;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  font-size: 1rem; 
+ }
+
+/* BotFound */
+.error {
+  text-align: center;
+  margin-top: 3rem;
 }
