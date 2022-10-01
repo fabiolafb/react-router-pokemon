@@ -13,8 +13,8 @@ export default function Pokemones() {
   const getDatosPokemones = async () => {
     const res = await fetch(endpoint);
     const data = await res.json();
-    setPokemones(data);
-    console.log(data);
+    setPokemones(data.results.sort((a, b) => a.name.localeCompare(b.name)));
+    //console.log(data);
   };
 
   //Función que redirecciona el botón al pokemon seleccionado
@@ -37,7 +37,7 @@ export default function Pokemones() {
         className="selector"
         onChange={(e) => setSelectPokemon(e.target.value)}
       >
-        <option value="" >
+        <option value="" disabled>
           Pokemones
         </option>
 
@@ -45,12 +45,12 @@ export default function Pokemones() {
           <option key={i} value={name}>
             {name}
           </option>
-        ))}
+        ))} 
       </select>
-      <Button onClick={irAPokemones} variant="dark" className="mt-3">
+      <Button onClick={irAPokemones} variant="" className="mt-3">
         Ver detalle
       </Button>
     </div>
   );
 }
-//if (name !== "") navigate("/pokemones/${name}}");
+

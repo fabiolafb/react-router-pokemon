@@ -39,20 +39,24 @@ code {
 .active {
   color: red;
   text-decoration: none;
+  text-shadow: 1px 1px 1px black;
+  cursor: pointer;
 }
 .inactive {
   color: white;
-  text-decoration: none;
+  text-decoration: none;text-shadow: 1px 1px 1px black;
+  cursor: pointer;
 }
 
 /* Home */
 .home_div {
   margin-top: 3rem;
   text-align: center;
-}
+  }
 .pokeimagen {
-  width: 28rem;
+  width: 28rem;  
 }
+
 
 /* Pokemones */
 .pokemones_div  {
@@ -68,19 +72,48 @@ code {
   text-align: center;
   font-size: 1rem;
   margin-top: 1.5rem;
+  border-radius: 5px;
 }
  button {
   margin-top: 2rem;
   width: 10rem;
   height: 2rem;
-  background-color: black;
+  background-color: red;
   color: white;
-  border-radius: 5px;
   font-size: 1rem; 
  }
 
-/* BotFound */
+/* NotFound */
 .error {
   text-align: center;
   margin-top: 3rem;
+}
+
+/* Card */
+.contenedor-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.poke-detalles {
+  font-size: 1.2rem;
+  margin-left: 2rem;
+  text-align: left;
+}
+/* .button-card {
+  background-color:darkorange;
+  border: black;
+} */
+.flecha-volver {
+  width: 4rem;
+  margin-top: 2rem;
+  cursor: pointer;
 }
