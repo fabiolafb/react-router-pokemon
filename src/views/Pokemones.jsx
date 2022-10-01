@@ -4,7 +4,7 @@ import { Button } from "react-bootstrap";
 
 export default function Pokemones() {
   //Estados
-  const [pokemones, setPokemones] = useState([]);
+  const [pokemones, setPokemones] = useState([]); //estado que trae info de la API(name pokemon)
   const [selectPokemon, setSelectPokemon] = useState("");
 
   //Función que llama a la API
@@ -17,7 +17,7 @@ export default function Pokemones() {
     //console.log(data);
   };
 
-  //Función que redirecciona el botón al pokemon seleccionado
+  //Función que redirecciona el botón al pokemon seleccionado y genera nueva vista
   const navigate = useNavigate();
   const irAPokemones = () => {
     if (selectPokemon) navigate(`/pokemones/${selectPokemon}`);
@@ -41,9 +41,9 @@ export default function Pokemones() {
           Pokemones
         </option>
 
-        {pokemones.map(({ name }, i) => (
-          <option key={i} value={name}>
-            {name}
+        {pokemones.map((elem, i) => (
+          <option key={i} value={elem.name}>
+            {elem.name}
           </option>
         ))}
       </select>
@@ -51,10 +51,10 @@ export default function Pokemones() {
         Ver detalle
       </Button>
       <img
-          height="150px"
-          src="https://i.pinimg.com/originals/15/94/9d/15949d8c5954017ebd431c421a9e4da2.gif"
-          alt=""
-        />
+        height="150px"
+        src="https://i.pinimg.com/originals/15/94/9d/15949d8c5954017ebd431c421a9e4da2.gif"
+        alt=""
+      />
     </div>
   );
 }

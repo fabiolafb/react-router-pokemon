@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Home from "./views/Home";
 import Pokemones from "./views/Pokemones";
 import NotFound from "./views/NotFound";
-import PokeDetalles from "./views/PokeDetalles";
+import PokeCard from "./views/PokeCard";
 
 function App() {  
   return (
@@ -13,7 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/pokemones" element={<Pokemones />} />
-          <Route path="/pokemones/:name" element={<PokeDetalles />} />
+          <Route path="/pokemones/:name" element={<PokeCard />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
