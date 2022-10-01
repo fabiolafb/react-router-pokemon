@@ -12,7 +12,7 @@ code {
 /* Navbar */
 .contenedor_nav {
   width: 100%; 
-  background-color: rgb(169, 164, 164);
+  background-color: rgb(240, 179, 68);
   height: 4rem;  
   text-decoration: none;
   color: black;
@@ -37,7 +37,7 @@ code {
   text-decoration: none;
 }
 .active {
-  color: red;
+  color: blue;
   text-decoration: none;
   text-shadow: 1px 1px 1px black;
   cursor: pointer;
@@ -72,15 +72,20 @@ code {
   text-align: center;
   font-size: 1rem;
   margin-top: 1.5rem;
-  border-radius: 5px;
+  border-radius: 8px;
+  cursor: pointer;
 }
  button {
   margin-top: 2rem;
+  margin-bottom: 2rem;
   width: 10rem;
   height: 2rem;
   background-color: red;
   color: white;
   font-size: 1rem; 
+  border-radius: 8px;
+  border-color: darkgrey;
+  cursor: pointer;
  }
 
 /* NotFound */
@@ -102,18 +107,19 @@ code {
   margin-top: 2rem;
   width: 100%;
 }
-
 .poke-detalles {
   font-size: 1.2rem;
   margin-left: 2rem;
   text-align: left;
 }
-/* .button-card {
-  background-color:darkorange;
-  border: black;
-} */
 .flecha-volver {
   width: 4rem;
   margin-top: 2rem;
   cursor: pointer;
+  margin-bottom: 1rem;
+}
+h4 {
+  margin-left: 15rem;
+  color: rgb(248, 240, 240);
+  font-size: 1rem;
 }

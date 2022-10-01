@@ -1,5 +1,5 @@
 import { Card } from "react-bootstrap";
-import ButtonCard from "./ButtonCard";
+import Flechavolver from "./Flechavolver";
 
 export default function PokeCard({ pokemon }) {
   const { name, stats, src, types } = pokemon;
@@ -27,7 +27,7 @@ export default function PokeCard({ pokemon }) {
           </Card.Text>
         </Card.Body>
       </Card>
-      <ButtonCard />
+      <Flechavolver />
     </div>
   );
 }

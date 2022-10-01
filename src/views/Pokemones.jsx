@@ -41,16 +41,20 @@ export default function Pokemones() {
           Pokemones
         </option>
 
-        {pokemones.map(({name}, i) => (
+        {pokemones.map(({ name }, i) => (
           <option key={i} value={name}>
             {name}
           </option>
-        ))} 
+        ))}
       </select>
       <Button onClick={irAPokemones} variant="" className="mt-3">
         Ver detalle
       </Button>
+      <img
+          height="150px"
+          src="https://i.pinimg.com/originals/15/94/9d/15949d8c5954017ebd431c421a9e4da2.gif"
+          alt=""
+        />
     </div>
   );
 }
-
